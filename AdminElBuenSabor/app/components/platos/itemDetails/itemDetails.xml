@@ -1,0 +1,121 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" navigatedTo="navigatedTo" id="platosModelDetailsScreen" cssClass="screen">
+    <Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+
+            <GridLayout rows="auto, *">
+                <GridLayout rows="auto" columns="*, *">
+
+                    <widgets:button text="Edit" tap="onEditItemTap" />
+
+
+                </GridLayout>
+                <StackLayout row="1">
+
+
+                    <Label text="{{ nombre }}" />
+
+
+                    <TextView text="{{ precio }}" />
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="categoriaField">
+
+
+                        <Label text="Categoría" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ categoria }}" cssClass="label" textWrap="true" />
+
+                        <!-- categoria content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="imagenField">
+
+
+                        <Label text="Imagen" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ imagen }}" cssClass="label" textWrap="true" />
+
+                        <!-- imagen content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="diaField">
+
+
+                        <Label text="Día" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ dia }}" cssClass="label" textWrap="true" />
+
+                        <!-- dia content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="etiquetaField">
+
+
+                        <Label text="Etiqueta" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ etiqueta }}" cssClass="label" textWrap="true" />
+
+                        <!-- etiqueta content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="tipoField">
+
+
+                        <Label text="Tipo" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ tipo }}" cssClass="label" textWrap="true" />
+
+                        <!-- tipo content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textBlock" id="activoDetailsField">
+
+
+                        <Label text="Activo" cssClass="label" colSpan="2" row="0" />
+
+
+                        <Label colSpan="2" row="1" text="{{ activo }}" cssClass="label" textWrap="true" />
+
+                        <!-- activoDetails content -->
+
+                    </GridLayout>
+
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                    <!-- additional view content -->
+
+
+                </StackLayout>
+            </GridLayout>
+
+        </StackLayout>
+    </ScrollView>
+</Page>
